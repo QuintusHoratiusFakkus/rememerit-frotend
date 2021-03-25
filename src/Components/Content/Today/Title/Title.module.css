@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.titleText {
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  color: gray;
+  margin-left: 6px;
+}
+
+.title {
+  font-family: 'Roboto Condensed', sans-serif;
+}

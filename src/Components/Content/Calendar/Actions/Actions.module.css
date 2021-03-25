@@ -1,0 +1,57 @@
+.hoverPanel {
+  position: relative;
+  display: flex;
+  writing-mode: vertical-lr;
+  border-right: 1px solid black;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hoverPanel:hover + .actionsWrapper {
+  display: flex;
+
+}
+
+.actionsWrapper:hover {
+  display: flex;
+}
+
+.YMDisplay {
+  display: block;
+  transform: rotate(180deg);
+  user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.actionsWrapper {
+  display: none;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  animation-duration: 3s;
+  animation-name: borderout;
+  background-image: url(./border1.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #fff;
+}
+
+/* .hoverPanel:hover .actionsWrapper {
+  animation-play-state: running;
+}
+
+@keyframes borderout {
+  from {
+    border-left: 0px solid black;
+    width: 0px;
+  }
+  to {
+    border: 1px solid black;
+    width: 100px;
+  }
+} */

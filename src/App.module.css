@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&display=swap');
+.App {
+  height: auto;
+}
+
+.wrapper {
+    display: grid;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(255,255,255, 1);
+
+    grid-template-areas:
+    /* "head head" */
+    /* "nPanel allcontent" */
+    "nPanel allcontent";
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-columns: 311px 1fr;
+}
+
+.header {
+  /* grid-area: head; */
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.navigation {
+  grid-area: nPanel;
+  position: fixed;
+  height: 100vh;
+  background-color: rgba(250,250,250, 1);
+  border-right: 1px solid rgb(229,229,229);
+  padding: 50px 0 0 40px;
+  width: 270px;
+}
+
+.content {
+  display: grid;
+
+  grid-template-rows: 45px 1fr;
+  grid-template-columns: 1fr;
+
+  padding: 35px 10vw 0 10vw;
+
+  grid-gap: 10px;
+  grid-area: allcontent;
+}
+
+.toDosList {
+  display: inline-block;
+}

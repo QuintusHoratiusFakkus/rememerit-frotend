@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.wrapper {
+  display: grid;
+
+  height: 525px;
+  min-width: 600px;
+  max-width: 1250px;
+
+  grid-template-rows: 1fr 500px;
+  grid-template-columns: 25px 1fr;
+
+  grid-template-areas:
+  ". title"
+  "actions calendar";
+}
+
+.calendarContent {
+  display: grid;
+
+  grid-area: calendar;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
+}
+
+.days {
+  display: grid;
+
+  grid-area: title;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.actions {
+  grid-area: actions;
+  padding-right: 20px;
+}
+
+.cellDate {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+}
